@@ -188,6 +188,7 @@ ul.topnav li.icon{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	padding-top: 50px;
 	margin-bottom: 20px;
 	transition: 0.8s;
 	opacity: 0.5;
