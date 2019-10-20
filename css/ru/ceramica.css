@@ -1,0 +1,159 @@
+body{
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+/*header*/
+.header{
+    width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	position: fixed;
+	background: rgba(255,255,255,0.8);
+	z-index: +1;
+}
+.main-first{
+    width: 100%;
+	height: 105px;
+	background-color: #333;
+}
+.logo{
+	margin-left: 2%;
+}
+.gsInformer{
+	margin-top: 10px;
+}
+/*header*/
+
+
+
+
+.brand{
+	display: flex;
+	flex-direction: column;
+	margin-right: 5%;
+}
+
+/*Navbar*/
+.topnav{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: rgba(0,0,148,0.8);
+	border-radius: 10px;
+	position: fixed;
+	width: 100vw;
+	z-index: +1;
+}
+
+ul.topnav li{
+	float: left;
+}
+
+ul.topnav li a{
+	display: inline-block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	transition: 0.3s;
+	font-size: 17px;
+}
+
+ul.topnav li a:hover{
+	background-color: #555;
+}
+
+ul.topnav li.icon{
+	display: none;
+}
+
+@media screen and (max-width: 1024px){
+	ul.topnav li:not(:first-child){display: none}
+	ul.topnav li.icon{
+		float: right;
+		display: inline-block;
+	}
+}
+
+@media screen and (max-width: 1024px){
+	ul.topnav.responsive{
+		position: relative;
+	}
+	ul.topnav.responsive li.icon{
+		position: absolute;
+		right: 0;
+		top: 0;
+		
+	}
+	ul.topnav.responsive li{
+		float: none;
+		display: inline;
+	}
+	
+	ul.topnav.responsive li a{
+		display: block;
+		text-align: left;
+	}
+}
+.topnav{
+	margin-bottom: 30px;
+}
+.none{
+	pointer-events: none;
+}
+.lang{
+	float: right;
+	margin-right: 2%;
+}
+/*Navbar*/
+
+/*Content*/
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-top: 70px;
+}
+.frames{
+	width: 206px;
+	height: 140px;
+	border: 1px solid black;
+	box-shadow: 0 0 10px gray;
+	margin: 5px;
+}
+.frames2{
+	width: 90px;
+	height: 140px;
+	border: 1px solid black;
+	box-shadow: 0 0 10px gray;
+	margin: 5px;
+}
+/*Content*/
+
+/*footer*/
+hr{
+	width: 60%;
+}
+
+.design{
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.design a{
+	text-decoration: none;
+	color: dimgray;
+}
+
+@media screen and (max-width:1024px){
+	.header{
+		display:none;
+	}
+	.main-first{
+		display: none;
+	}
+}
+/*footer*/
